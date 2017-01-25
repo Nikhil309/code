@@ -1,0 +1,10 @@
+/**All contact records and add them to list**/
+public class Prog1 {
+     public void Pr1(){
+            list<Contact> cont=new list<Contact>();
+            cont=[select ID from Contact];
+            for(Integer i=0;i<cont.size();i++) 
+            system.debug(cont); 
+        }
+    
+}

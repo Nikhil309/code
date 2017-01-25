@@ -1,0 +1,18 @@
+/**Welcome to @pex Programminh**/
+
+public class Program4 {
+     String strMsg='Welcome to @pex Programming';
+     
+     /***Replace @ with A***/
+     
+     void replace(){
+          String name = 'A';
+          String result = strMsg.replaceAll('@', name);
+          system.debug('result ' +strMsg);
+     }
+    void substring(){
+        string=substring;
+        substring=strMsg.substringAfter('to');
+        sytem.debug(''+strMsg);
+    }
+}

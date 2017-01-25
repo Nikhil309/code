@@ -1,0 +1,4 @@
+trigger OldObjTrigger on Account (before update) {
+    list<Account> acc=Trigger.Old;
+    system.debug(acc);
+}

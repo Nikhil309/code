@@ -1,0 +1,23 @@
+trigger CLTrigger on Opportunity (After Insert) {
+Opportunity[] oppsToClone = new Opportunity[]{};
+Opportunity[] oppsToSave = new Opportunity[]{};
+for (Opportunity record:trigger.new)
+{
+    if (record.StageName == 'Closed Won' )
+    oppsToClone.add(record);
+}
+if (oppsToClone.size() > 0)
+{
+    for (Opportunity record:oppsToClone)
+    {
+        Opportunity theClone = record.clone(false,false);
+        theClone.Amount = null;
+       
+        theClone.StageName = 'Training';
+        oppsToSave.add(theClone);
+    }
+
+    insert oppsToSave;
+}
+
+}

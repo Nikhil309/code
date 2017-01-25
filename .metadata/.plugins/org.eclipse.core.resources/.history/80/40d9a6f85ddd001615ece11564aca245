@@ -1,0 +1,5 @@
+trigger NewMapObjTrigger on A__c (after insert) {
+             map<Id,A__c> map1=Trigger.NewMap;
+             system.debug(map1);
+    
+}

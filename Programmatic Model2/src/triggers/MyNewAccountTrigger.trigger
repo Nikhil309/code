@@ -1,0 +1,22 @@
+trigger MyNewAccountTrigger on Account (after insert) {
+    if(Trigger.isInsert){
+        for(Account a:Trigger.new){
+            system.assertEquals('100000',a.AccountNumber);
+            system.assertEquals('9878654300',a.Phone);
+            system.assertEquals('Media',a.Industry);
+            a.AccountNumber='100001';
+        }
+    }
+    // If the trigger is not a before trigger, it must be an after trigger.
+    else{
+        if(Trigger.isInsert){
+            list<Contact> con=new list<Contact>();
+            for(Account a :Trigger.new){
+                if(a.Name=='MakeContact'){
+                    con.add(new Contact(LastName=a.Name,AccountId=a.Id));
+                }
+            }
+            insert con;
+        }
+    }
+}

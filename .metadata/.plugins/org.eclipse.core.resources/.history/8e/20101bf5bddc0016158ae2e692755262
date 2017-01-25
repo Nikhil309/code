@@ -1,0 +1,7 @@
+public class TestQuery {
+    public void Tri1(){
+        list<Contact> con=Trigger.new;
+        system.debug(con);
+    }
+    
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SynchronizeViewSettings">
+		<item value="1484578083865" key="lastactiveparticipant_sec_id"/>
+		<item value="com.salesforce.ide.ui.sync.componentSyncParticipant" key="lastactiveparticipant_id"/>
+		<item value="false" key="linkWithEditor"/>
+		<section name="com.salesforce.ide.ui.sync.componentSyncParticipant.1483955309250">
+			<item value="org.eclipse.team.ui.modelprovider_compressedfolders" key="org.eclipse.team.ui.P_LAST_MODELPROVIDER"/>
+		</section>
+		<section name="com.salesforce.ide.ui.sync.componentSyncParticipant.1483960375827">
+			<item value="org.eclipse.team.ui.modelprovider_compressedfolders" key="org.eclipse.team.ui.P_LAST_MODELPROVIDER"/>
+		</section>
+		<section name="com.salesforce.ide.ui.sync.componentSyncParticipant.1484115756880">
+			<item value="org.eclipse.team.ui.modelprovider_compressedfolders" key="org.eclipse.team.ui.P_LAST_MODELPROVIDER"/>
+		</section>
+		<section name="com.salesforce.ide.ui.sync.componentSyncParticipant.1484578083865">
+			<item value="org.eclipse.team.ui.modelprovider_compressedfolders" key="org.eclipse.team.ui.P_LAST_MODELPROVIDER"/>
+		</section>
+		<section name="com.salesforce.ide.ui.sync.componentSyncParticipant.1483956574043">
+		</section>
+	</section>
+</section>

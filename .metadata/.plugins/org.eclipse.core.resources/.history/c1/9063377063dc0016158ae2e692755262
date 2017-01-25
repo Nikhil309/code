@@ -1,0 +1,8 @@
+/**Method to Reverse**/
+public class Reverse {
+             String strSample = 'Hello';
+             String strReversed = strSample.reverse();
+        public Rev() {
+                system.debug('String is------------------------'+strReversed);
+         }
+}

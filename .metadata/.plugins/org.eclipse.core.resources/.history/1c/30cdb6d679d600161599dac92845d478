@@ -1,0 +1,10 @@
+public class OOP4{
+   
+    public OOP4() {
+        system.debug('jjjjjj');
+    }
+    private abstract void cost();
+            void change(){
+            system.debug('iiiii');
+    }
+}

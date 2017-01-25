@@ -1,0 +1,4 @@
+trigger NewObjTrigger on Contact (after insert) {
+    list<Contact> con=Trigger.new;
+    system.debug(con);
+}

@@ -1,0 +1,13 @@
+public class Clone {
+    static boolean run=true;
+    public static boolean clon(){
+        if(run){
+            run=false;
+            return true;
+        }
+        else{
+            return false;
+        }
+       
+    }
+}

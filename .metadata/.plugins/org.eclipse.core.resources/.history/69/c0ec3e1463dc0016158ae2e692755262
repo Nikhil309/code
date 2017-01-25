@@ -1,0 +1,18 @@
+/**Fibonacci Series**/
+
+public class Fibonacci{
+
+public void cal(){
+    Integer coun,num1=0,num2=1,result,i=2,series;
+    coun=series;
+    System.debug(num1+''+num2);
+    for(i=2;i<coun;i++)
+    {
+        result=num1+num2;
+        num1=num2;
+        num2=result;
+        system.debug(''+result);
+        
+    }
+  }
+}

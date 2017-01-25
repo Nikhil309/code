@@ -1,0 +1,4 @@
+trigger OldObjTrigger on Account (before insert) {
+    list<Account> acc=Trigger.old;
+    system.debug(acc);
+}

@@ -1,0 +1,7 @@
+public  class Para5 {
+    public Para5(){
+        String strMsg='Welcome to @pex Programming';
+        if(count(strMsg))
+    }
+    
+}

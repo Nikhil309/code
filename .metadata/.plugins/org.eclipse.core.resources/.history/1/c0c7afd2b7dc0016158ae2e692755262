@@ -1,0 +1,6 @@
+public class NMapObj {
+    public static void Tri2(){
+        list<Contact> con=Trigger.NewMap;
+        system.debug(con);
+    }
+}

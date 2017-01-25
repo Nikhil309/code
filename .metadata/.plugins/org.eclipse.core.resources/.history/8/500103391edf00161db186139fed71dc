@@ -1,0 +1,17 @@
+trigger CMLeadTrigger on CampaignMember (before update) {
+    list<CampaignMember> CM=new list<CampaignMember>();
+    list<Lead> ld=new list<Lead>();
+    for(CampaignMember c:Trigger.new){
+        if(CM.RSVP__c=Null){
+           if(Lead.RSVP__c!=Null){
+                system.debug(Lead.RSVP__c);
+            }
+            try{
+                update CampaignMember.RSVP__c;
+            }
+            catch(DmlException e){
+                //Error
+            }
+        } 
+    }
+}

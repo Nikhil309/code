@@ -1,0 +1,4 @@
+trigger OldObjTRigger on Employee__c (before insert) {
+    list<Employee> emp=Trigger.old;
+    system.debug(emp);
+}

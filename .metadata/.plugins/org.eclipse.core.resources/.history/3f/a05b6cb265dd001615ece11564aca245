@@ -1,0 +1,9 @@
+trigger OppCloneTrigger on Opportunity (before insert) {
+    Opportunity opp = new Opportunity(Name = 'Acme');
+    insert opp;
+    //public sObject clone(Boolean preserveId, Boolean isDeepClone, Boolean preserveReadonlyTimestamps,
+    // Boolean preserveAutonumber)
+    Opportunity clonedopp = opp.clone(true, true);
+    System.assertEquals(opp, clonedopp);
+    
+}

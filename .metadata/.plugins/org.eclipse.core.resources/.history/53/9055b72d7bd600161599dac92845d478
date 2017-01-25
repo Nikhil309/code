@@ -1,0 +1,8 @@
+public abstract class OOP4{
+    public cell(){
+        system.debug('Hiiii');
+    }
+    public void change(){
+            system.debug('Bye');
+    }
+ }

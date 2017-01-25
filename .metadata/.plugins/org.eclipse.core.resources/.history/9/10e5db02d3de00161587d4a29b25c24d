@@ -1,0 +1,3 @@
+trigger CLTrigger on Opportunity (before update) {
+    
+}

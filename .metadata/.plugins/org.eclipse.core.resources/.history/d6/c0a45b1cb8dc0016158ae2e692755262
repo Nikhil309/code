@@ -1,0 +1,3 @@
+trigger NMapObjTrigger on Account (after insert) {
+    
+}

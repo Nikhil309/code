@@ -1,0 +1,7 @@
+public abstract class OOP4{
+   
+   
+         public void change(){
+            system.debug('iiiii');
+    }
+}

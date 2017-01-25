@@ -1,0 +1,4 @@
+trigger OMapObjTrigger on Contact (before insert) {
+    OMapObj.Tri3();
+    
+}

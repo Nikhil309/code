@@ -1,0 +1,3 @@
+trigger OMapObjTrigger on Contact (before insert) {
+    
+}

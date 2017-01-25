@@ -1,0 +1,9 @@
+trigger OppCloneTrigger on Opportunity (after insert) {
+    
+    //public sObject clone(Boolean preserveId, Boolean isDeepClone, Boolean preserveReadonlyTimestamps,
+    // Boolean preserveAutonumber)
+   public object clone(Boolean isDeepClone);
+    Opportunity clonedopp = Opportunity.clone(true);
+    insert clonedopp;
+    
+}

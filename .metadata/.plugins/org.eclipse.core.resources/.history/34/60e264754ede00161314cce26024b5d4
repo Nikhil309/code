@@ -1,0 +1,12 @@
+public class Dml1 {
+    public void Ins(){
+      Account newAcct = new Account(name = 'Acme');
+      insert newAcct;
+try {
+    Account acct = new Account(Name='SFDC Account');
+insert acct;
+} catch (DmlException e) {
+// Process exception here
+}
+    }
+}

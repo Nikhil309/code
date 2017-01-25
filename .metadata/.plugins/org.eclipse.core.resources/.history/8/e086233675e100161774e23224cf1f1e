@@ -1,0 +1,21 @@
+public class NewAccountController {
+    Account account;
+    Contact contact;
+    public Account getAccount(){
+        if(account==null) account=new Account();
+        return account;
+    }
+    public Contact getContact(){
+        if(contact==null) contact=new Contact();
+        return contact;
+    }
+    public PageReference Page1(){
+        return Page.AccountPage1;
+    }
+    public PageReference save(){
+        account.phone=contact.phone;
+        insert account;
+        contact.accountId=account.Id;
+        insert contact; 
+    }
+}

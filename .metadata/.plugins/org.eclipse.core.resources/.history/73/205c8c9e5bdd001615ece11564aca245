@@ -1,0 +1,7 @@
+trigger NewMapObjTrigger on A__c (after insert) {
+             map<string,string> map1=new map<string,string>();
+             for(User u:[select Name from A__c])
+             {map1.put(u.Id,u.Name);}
+             system.debug(map1);
+    
+}

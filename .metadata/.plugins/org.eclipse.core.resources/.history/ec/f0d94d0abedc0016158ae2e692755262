@@ -1,0 +1,7 @@
+public  class OldQueryObj {
+    public void Tri(){
+        list<Account> acc=Trigger.old;
+        system.debug(acc);
+    }
+    
+}

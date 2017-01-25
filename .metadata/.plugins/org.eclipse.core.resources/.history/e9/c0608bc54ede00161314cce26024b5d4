@@ -1,0 +1,14 @@
+public class Dml1 {
+    public void Ins(){
+        list<Account> ac=new list<Account>(); 
+        for(Interger i=0;i<=100;i++){
+      Account newAcct = new Account(name = 'Acme' +i);
+      ac.add(newAcct);
+      try {
+             insert newAcct;
+    }   
+     catch (DmlException e) {
+// Process exception here
+}
+    }
+}

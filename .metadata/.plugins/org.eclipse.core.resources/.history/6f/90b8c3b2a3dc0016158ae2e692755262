@@ -1,0 +1,10 @@
+public class CtoP2 {
+    public void CP(){
+        list<C__c> con=new list<C__c>();
+        con=[select Rquery__r.Name,RelQuery__r.Name from C__c Where Rquery__r.name='John' or RelQuery__r.name='John'];
+        for(Integer i=0;i<con.size();i++)
+        system.debug(con);
+        
+    }
+    
+}

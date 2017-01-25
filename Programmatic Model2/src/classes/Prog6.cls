@@ -1,0 +1,10 @@
+/**To display 100 Account recourd with amount greater than 10000 ordered by created date skip first 50 records**/
+public  class Prog6 {
+    public void pr6(){
+        list<Account> Opp=new list<Account>();
+        Opp=[select Id,Name from Account Where Amount>10000 order by CreatedDate limit 100 offset 50];
+        for(Integer i=0;i<opp.size();i++)
+        system.debug(opp);
+        
+    }
+}

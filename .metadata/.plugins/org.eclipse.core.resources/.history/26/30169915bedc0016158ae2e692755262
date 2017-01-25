@@ -1,0 +1,6 @@
+public class NMapObj {
+    public void Tri2(){
+        map<Id,Account> newAcc = (Map<Id, Account>) Trigger.newMap;
+        system.debug(newAcc);
+    }
+}

@@ -1,0 +1,4 @@
+trigger TestTrigger on Contact (after insert) {
+    TestQuery.Tri1();
+    
+}

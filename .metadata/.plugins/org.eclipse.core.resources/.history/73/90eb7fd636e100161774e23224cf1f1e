@@ -1,0 +1,16 @@
+trigger CloneTrigger on Account (After insert) {
+   if(Trigger.isAfter){
+        if(Trigger.isInsert){
+            system.debug(Trigger.new);
+            if(CloneClass.runOnce()){
+                list<Account> clone=new list<Account>();
+                for(Account o: Trigger.new){
+                    clone.add(new Account(Name=o.Name));
+                    
+               }
+               insert(clone);
+               system.debug(clone);
+            }
+        }
+    }
+}

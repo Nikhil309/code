@@ -1,0 +1,9 @@
+public class NewEvent {
+     public void Trivl(){
+      Contact con=new Contact();
+      con.LastName=Trigger.new[0].name;
+      con.Id=Trigger.new[0].Id;
+      insert con;
+    }
+    
+}

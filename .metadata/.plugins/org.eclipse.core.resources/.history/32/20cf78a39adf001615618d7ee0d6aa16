@@ -1,0 +1,16 @@
+trigger CloneTrigger on Opportunity (After insert) {
+   if(Trigger.isBefore){
+        if(Trigger.isInsert){
+            system.debug(Trigger.new);
+            if(CloneClass.runOnce()){
+                list<Opportunity> clone=new list<Opportunity>();
+                for(Opportunity o: Trigger.new){
+                    clone.add(new Opportunity(Name=o.Name, StageName=o.StageName, CloseDate=o.CloseDate));
+                    system.debug(clone);
+               }
+               insert(clone);
+              
+            }
+        }
+    }
+}

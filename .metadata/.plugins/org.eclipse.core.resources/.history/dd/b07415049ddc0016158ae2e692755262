@@ -1,0 +1,12 @@
+/**Find all record in account where BIllingstate Maharashtra and kerela**/
+public class Prog5 {
+    public void pr5(){
+            list<Account> BillingState=new list<Account>();
+            for(Account bs:[select Name,Id,BillingState from Account Where BillingState NOT IN('Maharashtra','Kerela') 
+            order by Name DESC limit 10000])
+            {
+                BillingState.add(bs);
+            }
+         system.debug(BillingState);
+    }
+}

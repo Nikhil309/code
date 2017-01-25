@@ -1,0 +1,6 @@
+public  class Parae {
+     public Parae(){
+     String strMsg='Welcome to @pex Programming';
+     system.debug(strMsg.toLowercase());
+     }
+}

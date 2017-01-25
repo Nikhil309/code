@@ -1,0 +1,11 @@
+/**Child to Parent relationship where Name=John**/
+public class CtoP2 {
+    public void CP(){
+        list<C__c> con=new list<C__c>();
+        con=[Select c.Rquery__c, c.RelQuery__r.Name__c, c.RelQuery__c From C__c c where c.Rquery__r.Name__c='John' or c.RelQuery__r.Name__c='John'];
+        for(Integer i=0;i<con.size();i++)
+        system.debug(con);
+        
+    }
+    
+}

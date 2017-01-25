@@ -1,0 +1,9 @@
+public class PtoC1 {
+    public void PC(){
+        list<Account> acc=new list<Account>();
+        acc=[select Account.Name,(select Contact.Name from Contacts) from Account Where Name='John'];
+        for(Integer i=0;i<acc.size();i++)
+        system.debug(acc);
+    }
+    
+}

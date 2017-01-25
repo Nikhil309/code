@@ -1,0 +1,6 @@
+trigger NewMapObjTrigger on A__c (after insert) {
+             map<Id,A__c> map1=new map<Id,A__c>();
+             list<A__c> a=Trigger.new;
+             system.debug('--Trigger.newMap-----------------'+Trigger.newMap);
+    
+}

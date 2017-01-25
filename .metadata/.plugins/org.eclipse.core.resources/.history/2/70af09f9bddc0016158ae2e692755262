@@ -1,0 +1,7 @@
+public class OMapObj {
+     public static void Tri3(){
+        map<Id,Contact> newcon = (Map<Id, Contact>) Trigger.oldMap;
+        system.debug(newcon);
+    }
+    
+}

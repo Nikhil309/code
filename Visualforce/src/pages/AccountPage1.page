@@ -1,0 +1,15 @@
+<apex:page controller='NewAccountController' tabstyle='Account'>
+<apex:sectionHeader title='Account' subtitle='Page1'/>
+<apex:form>
+<apex:pageBlock title='Update Information'>
+<apex:pageBlockSection title='Account Information'>
+<apex:inputField id='AccountName' value='{!account.name}'/>
+<apex:inputField id='AccountPhone' value='{!account.phone}'/>
+</apex:pageBlockSection>
+<apex:pageBlockSection title='Contact Information'>
+<apex:inputField id='ContactFirstName' value='{!contact.FirstName}'/>
+<apex:inputField id='ContactLastName' value='{!contact.LastName}'/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

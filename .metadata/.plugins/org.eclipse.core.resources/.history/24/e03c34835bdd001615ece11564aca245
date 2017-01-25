@@ -1,0 +1,3 @@
+trigger NewMapObjTrigger on A__c (after insert) {
+    
+}

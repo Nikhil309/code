@@ -1,0 +1,4 @@
+trigger TestTrigger on Contact (before update) {
+   TestQuery.Tri1();
+    
+}

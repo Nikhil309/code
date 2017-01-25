@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Agregate1</members>
+        <members>CloneClass</members>
+        <members>CtoP1</members>
+        <members>CtoP2</members>
+        <members>Dml1</members>
+        <members>Dml2</members>
+        <members>Prog1</members>
+        <members>Prog2</members>
+        <members>Prog4</members>
+        <members>Prog41</members>
+        <members>Prog5</members>
+        <members>Prog6</members>
+        <members>PtoC1</members>
+        <members>PtoC2</members>
+        <members>PtoC3</members>
+        <members>SOSL</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CMLeadTrigger</members>
+        <members>MyNewAccountTrigger</members>
+        <members>NewMapObjTrigger</members>
+        <members>NewObjTrigger</members>
+        <members>OldMapObjTrigger</members>
+        <members>OldObjTrigger</members>
+        <members>OldQObj</members>
+        <name>ApexTrigger</name>
+    </types>
+    <version>36.0</version>
+</Package>

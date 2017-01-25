@@ -1,0 +1,7 @@
+public class NMapObj {
+    public static void Tri2(){
+        
+        map<Id,Lead> newLeadMap = (Map<Id, Lead>) Trigger.newMap;
+        system.debug(newLeadMap);
+    }
+}

@@ -1,0 +1,12 @@
+trigger CMLeadTrigger on CampaignMember (before update) {
+    list<CampaignMember> CM=new list<CampaignMember>();
+    list<Lead> ld=new list<Lead>();
+    for(CampaignMember C:Trigger.new){
+            if(C.RSVP__c==Null && Lead.RSVP__c!=Null){
+                
+            }
+            list<Lead> l=[select Id,LastName,RSVP__c from Lead where LastName='aaa'];
+            
+            
+       } 
+}

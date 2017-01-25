@@ -1,0 +1,9 @@
+public class PtoC2 {
+     public void PC(){
+        list<Account> acc=new list<Account>();
+        acc=[select Account.ID,(select Opportunity.ID from Opportunities) from Account where Name='Closed Won'];
+        for(Integer i=0;i<acc.size();i++)
+        system.debug(acc);
+    }
+    
+}

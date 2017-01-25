@@ -1,0 +1,7 @@
+trigger CloneTrigger on Opportunity (After insert) {
+   if(CloneClass.runOnce()){
+    list<Opportunity> Opp=new list<Opportunity>();
+    Opp = Trigger.new.deepClone();
+    insert Opp;
+}
+}

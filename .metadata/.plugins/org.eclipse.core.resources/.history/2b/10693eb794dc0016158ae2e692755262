@@ -1,0 +1,8 @@
+public  class Queries61 {
+    public void Quer6(){
+        map<String,Account> map1=new map<String,Account>();
+        for(Account a:[Select Name from Account])
+        {map1.put(a.Name,a);}
+        system.debug(map1);
+    }
+}

@@ -1,0 +1,3 @@
+trigger OldObjTrigger on Account (after insert) {
+    
+}

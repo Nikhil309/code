@@ -1,0 +1,3 @@
+trigger OldQObj on Account (before insert) {
+    OldQueryObj.Tri();
+}

@@ -1,0 +1,26 @@
+trigger CMLeadTrigger on CampaignMember (before update) {
+    {    
+    String objRSVP__c;
+     for(CampaignMember obj: Trigger.new)
+        {
+        if (obj.RSVP__c == Null && Lead.RSVP__C!=Null)
+         {
+            objRSVP__c = obj.RSVP__c;
+            }
+
+        }
+   List<Lead> ld = new List<Lead>([SELECT Id, RSVP__c, LastName FROM Lead WHERE objRSVP__c = obj.RSVP__c]);
+ List<Lead> caseUpdateList = new List<Lead>();
+ for(Lead c: Lead)
+     {
+         
+         
+         c.RSVP__c = objRSVP__c;
+        LeadUpdateList.add(c);
+        }
+        if(LeadUpdateList.size() > 0)
+        {
+         update LeadUpdateList;
+        }
+        }
+}

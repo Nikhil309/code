@@ -1,0 +1,15 @@
+public class Dml1 {
+    public void Ins(){
+       list<Lead> led=new list<Lead>();
+       for(Interger i=0;i<=100;i++){
+           Lead ld=new Lead(Name='Nikhil1'+i);
+           led.add(ld);
+       
+       try{
+             insert led;
+       }
+       catch(DmlException e){
+            //Error
+       }
+    }
+}

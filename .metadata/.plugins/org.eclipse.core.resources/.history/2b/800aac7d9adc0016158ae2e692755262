@@ -1,0 +1,10 @@
+public class Test {
+    public void Te(){
+    Account newAcct = new Account(name = 'Acme');
+try {
+insert newAcct;
+} catch (DmlException e) {
+// Process exception here
+}
+    }
+}

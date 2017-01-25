@@ -1,0 +1,12 @@
+public class Queries3 {
+    public void Quer3(){
+        Account newAcc=new Account(Account Name='Nikhil');
+        try{
+        insert newAcc;
+        }
+        catch(DmlException E){
+           //process exception here 
+        }
+    }
+    
+}

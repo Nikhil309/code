@@ -1,0 +1,4 @@
+trigger OldObjTrigger on Contact (before update) {
+    list<Contact> cont=Trigger.Old;
+    system.debug(cont);
+}
